@@ -44,6 +44,10 @@ $ cp docker-compose.override.dist docker-compose.override
 $ npm install
 ```
 
+`
+Used docker-compose version: 1.29.2, Nodejs: 18.17.1
+`
+
 ## Running the app
 
 ```bash
