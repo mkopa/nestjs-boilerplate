@@ -10,6 +10,7 @@ import { ObjectSchema } from 'joi';
 export class JoiValidationPipe implements PipeTransform {
   constructor(private schema: ObjectSchema) {}
 
+  // eslint-disable-next-line
   transform(value: any, metadata: ArgumentMetadata) {
     const { error } = this.schema.validate(value);
     if (error) {
