@@ -1,7 +1,7 @@
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { DataSource } from 'typeorm';
-import { TodoEntity } from '../../todo/entities';
+import { TasksEntity } from '../../tasks/entities';
 
 export const typeormModule = TypeOrmModule.forRootAsync({
   imports: [ConfigModule],
@@ -13,7 +13,7 @@ export const typeormModule = TypeOrmModule.forRootAsync({
     username: configService.get('database.user'),
     password: configService.get('database.password'),
     database: configService.get('database.db'),
-    entities: [TodoEntity],
+    entities: [TasksEntity],
     synchronize: true,
   }),
   dataSourceFactory: async (options) => {

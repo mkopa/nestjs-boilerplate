@@ -1,9 +1,9 @@
 import Joi from 'joi';
 
-export const removeTodoSchema = Joi.object({
+export const removeTaskSchema = Joi.object({
   id: Joi.number().required(),
 });
 
-export class RemoveTodoDto {
+export class RemoveTaskDto {
   id: number;
 }

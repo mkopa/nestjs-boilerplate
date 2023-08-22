@@ -1,5 +1,5 @@
 import { Logger, Module } from '@nestjs/common';
-import { TodoModule } from './todo';
+import { TasksModule } from './tasks';
 import { RouterModule } from '@nestjs/core';
 import { ConfigModule } from '@nestjs/config';
 import { configuration } from './config';
@@ -11,11 +11,11 @@ import { typeormModule } from './common/modules';
       load: [configuration],
     }),
     typeormModule,
-    TodoModule,
+    TasksModule,
     RouterModule.register([
       {
-        path: 'todo',
-        module: TodoModule,
+        path: 'tasks',
+        module: TasksModule,
       },
     ]),
   ],

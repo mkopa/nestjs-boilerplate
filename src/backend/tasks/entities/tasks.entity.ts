@@ -1,7 +1,7 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class TodoEntity {
+export class TasksEntity {
   @PrimaryGeneratedColumn()
   id: number;
 

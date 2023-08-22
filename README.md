@@ -10,11 +10,11 @@
 
 #### GET - get all todos
 ```
-localhost:3000/todo
+localhost:3000/tasks
 ```
 #### POST - create new todo
 ```
-localhost:3000/todo
+localhost:3000/tasks
 
 BODY json payload example:
 {
@@ -23,17 +23,16 @@ BODY json payload example:
 ```
 #### PATCH - set the existing "todo" as done
 ```
-localhost:3000/todo
+localhost:3000/tasks/:id
 
 BODY json payload example:
 {
-    "id": 1,
     "done": true
 }
 ```
 #### DELETE - remove todo
 ```
-localhost:3000/todo/:id
+localhost:3000/tasks/:id
 ```
 
 ## Installation

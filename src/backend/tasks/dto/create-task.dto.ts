@@ -1,9 +1,9 @@
 import Joi from 'joi';
 
-export const createTodoSchema = Joi.object({
+export const createTaskSchema = Joi.object({
   content: Joi.string().required(),
 });
 
-export class CreateTodoDto {
+export class CreateTaskDto {
   content: string;
 }
