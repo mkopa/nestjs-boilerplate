@@ -18,7 +18,7 @@ localhost:3000/todo
 
 BODY json payload example:
 {
-    "todo": "some todo"
+    "content": "some todo"
 }
 ```
 #### PATCH - set the existing "todo" as done
@@ -28,7 +28,7 @@ localhost:3000/todo
 BODY json payload example:
 {
     "id": 1,
-    "isDone": true
+    "done": true
 }
 ```
 #### DELETE - remove todo

@@ -6,8 +6,8 @@ export class TodoEntity {
   id: number;
 
   @Column()
-  todo: string;
+  content: string;
 
   @Column({ default: false })
-  isDone: boolean;
+  done: boolean;
 }
