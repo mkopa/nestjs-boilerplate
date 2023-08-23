@@ -16,16 +16,16 @@ export class TasksService {
   }
 
   async createTask(todo: CreateTaskDto) {
-    await this.taskRepository.save(todo);
+    return this.taskRepository.save(todo);
   }
 
   async updateTask(todo: UpdateTaskDto) {
     const id = todo.id;
 
-    await this.taskRepository.update({ id }, { ...todo });
+    return await this.taskRepository.update({ id }, { ...todo });
   }
 
   async removeTask(id: number) {
-    await this.taskRepository.delete(id);
+    return await this.taskRepository.delete(id);
   }
 }
