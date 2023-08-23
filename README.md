@@ -51,7 +51,7 @@ Used docker-compose version: 1.29.2, Nodejs: 18.17.1
 
 ```bash
 # start db
-$ docker-compose up -d
+$ docker-compose up -d postgres
 
 # development
 $ npm run start
@@ -61,7 +61,12 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+
+# create a docker backend-service image and run the app
+$ docker-compose up
 ```
+
+
 
 ## Test
 

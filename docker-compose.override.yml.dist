@@ -1,6 +1,19 @@
 version: "3.8"
 
 services:
+  backend:
+    environment:
+      APP_NAME: todo-api
+      LOGGING_LEVEL: debug
+      PORT: 3000
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      DATABASE_USER: postgres
+      DATABASE_PASSWORD: postgres
+      DATABASE_DB: todo
+    ports:
+      - 3000:3000
+
   postgres:
     image: postgres:15-alpine
     hostname: postgres

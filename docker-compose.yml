@@ -1,6 +1,15 @@
 version: "3.8"
 
 services:
+  backend:
+    image: backend-service:latest
+    build:
+      context: ./
+      dockerfile: docker/backend/prod/Dockerfile
+    hostname: backend
+    networks:
+      - app
+
   postgres:
     image: postgres:15-alpine
     environment:
