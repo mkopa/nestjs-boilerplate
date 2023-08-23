@@ -1,0 +1,16 @@
+name: TODO List CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build and test
+    strategy:
+      matrix:
+        node-version: [ 18 ]
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm i
+      - run: npm run lint
+      - run: npm run build
+      - run: npm run test
+
