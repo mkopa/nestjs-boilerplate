@@ -47,7 +47,7 @@ $ npm install
 Used docker-compose version: 1.29.2, Nodejs: 18.17.1
 `
 
-## Running the app
+## Running the back-end
 
 ```bash
 # start db
@@ -80,6 +80,9 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## Running the front-end
+### work in progress
 
 ## License
 
