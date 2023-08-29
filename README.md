@@ -2,9 +2,11 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
+[![TODO List CI](https://github.com/mkopa/nestjs-boilerplate/actions/workflows/tests.yml/badge.svg)](https://github.com/mkopa/nestjs-boilerplate/actions/workflows/tests.yml)
+
 ## Description
 
-[Nest](https://nestjs.com) & [React](https://react.dev) **To Do List** app with Node 18+, docker-compose,  Postgres, TypeORM and Joi
+**[NestJS](https://nestjs.com)** **Boilerplate** app with Node 18+, docker-compose,  Postgres, TypeORM, Joi and GitHub Actions
 
 ### Endpoints:
 
@@ -78,9 +80,6 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
-## Running the front-end
-### work in progress
 
 ## License
 
