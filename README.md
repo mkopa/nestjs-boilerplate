@@ -4,7 +4,7 @@
 
 ## Description
 
-[Nest](https://nestjs.com) & [React](https://react.dev) **To Do List** app with Node 18+, docker-compose,  Postgres, TypeORM and Joi
+**[NestJS](https://nestjs.com)** **Boilerplate** app with Node 18+, docker-compose,  Postgres, TypeORM, Joi and GitHub Actions
 
 ### Endpoints:
 
@@ -80,9 +80,6 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
-## Running the front-end
-### work in progress
 
 ## License
 

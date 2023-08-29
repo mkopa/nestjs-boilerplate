@@ -1,7 +1,7 @@
 {
-  "name": "nestjs-todo-api",
+  "name": "nestjs-boilerplate",
   "version": "0.0.1",
-  "description": "Nestjs todo app with postgres, typeorm and joi",
+  "description": "Nestjs boilerplate with postgres, typeorm and joi",
   "author": "Marcin Kopa",
   "license": "MIT",
   "scripts": {
