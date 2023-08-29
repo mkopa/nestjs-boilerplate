@@ -1,4 +1,4 @@
-name: TODO List CI
+name: NestJS Boilerplate
 on: [push]
 jobs:
   build:

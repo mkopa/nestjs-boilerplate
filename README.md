@@ -2,6 +2,8 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
+[![TODO List CI](https://github.com/mkopa/nestjs-boilerplate/actions/workflows/tests.yml/badge.svg)](https://github.com/mkopa/nestjs-boilerplate/actions/workflows/tests.yml)
+
 ## Description
 
 **[NestJS](https://nestjs.com)** **Boilerplate** app with Node 18+, docker-compose,  Postgres, TypeORM, Joi and GitHub Actions
