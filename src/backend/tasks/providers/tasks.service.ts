@@ -12,7 +12,11 @@ export class TasksService {
   ) {}
 
   async getTasks(): Promise<TasksEntity[]> {
-    return this.taskRepository.find();
+    return await this.taskRepository.find({
+      order: {
+        id: 'ASC',
+      },
+    });
   }
 
   async createTask(todo: CreateTaskDto) {
