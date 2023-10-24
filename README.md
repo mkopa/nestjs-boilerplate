@@ -40,19 +40,19 @@ localhost:3000/tasks/:id
 
 ```bash
 $ cp .env.dist .env
-$ cp docker-compose.override.dist docker-compose.override
+$ cp docker-compose.override.yml.dist docker-compose.override.yml
 $ npm install
 ```
 
 `
-Used docker-compose version: 1.29.2, Nodejs: 18.17.1
+Used Nodejs v20.9.0
 `
 
 ## Running the back-end
 
 ```bash
 # start db
-$ docker-compose up -d postgres
+$ docker compose up -d postgres
 
 # development
 $ npm run start
@@ -64,7 +64,7 @@ $ npm run start:dev
 $ npm run start:prod
 
 # create a docker backend-service image and run the app
-$ docker-compose up
+$ docker compose up
 ```
 
 ## Test

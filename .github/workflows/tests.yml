@@ -6,7 +6,7 @@ jobs:
     name: Build and test
     strategy:
       matrix:
-        node-version: [ 18 ]
+        node-version: [ 20 ]
     steps:
       - uses: actions/checkout@v2
       - run: npm i
